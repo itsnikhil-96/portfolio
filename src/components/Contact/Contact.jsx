@@ -63,24 +63,17 @@ const ContactPage = () => {
           </Row>
           <Row className="justify-content-center">
             <Col xs="auto">
-              <Button
-                variant="primary"
-                className="mt-2 w-auto"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = resumePDF;
-                  link.download = 'Nikhil_Resume.pdf'; // optional custom filename
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
+              <a
+                href={resumePDF}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Download Resume
-              </Button>
-
+                <Button variant="primary" className="mt-2 w-auto">
+                  View Resume
+                </Button>
+              </a>
             </Col>
           </Row>
-
         </Col>
         
       </Row>
