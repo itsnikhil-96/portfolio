@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-// Sample logos – replace with actual images
 import leetcodeLogo from '../../assets/leetcode.jpeg';
 import codeforcesLogo from '../../assets/codechef.jpeg';
 
@@ -9,20 +8,22 @@ const codingProfiles = [
   {
     platform: 'LeetCode',
     logo: leetcodeLogo,
-    rating: 'Rating : 1500+',
+    rating: 'Rating: 1500+',
     problemsSolved: '300+ problems solved',
     badges: ['50 Days Badge'],
+    profileLink: 'https://leetcode.com/u/nikhilpolimetla852/',
   },
   {
     platform: 'Codechef',
     logo: codeforcesLogo,
-    rating: 'Rating : 1370+',
-    problemsSolved: '450+ Problems Solved',
+    rating: 'Rating: 1370+',
+    problemsSolved: '450+ problems solved',
     badges: [
       'Silver Badge in Contests',
       'Silver Badge in Problem Solver',
       'Diamond Badge in Daily Streak (100 Days)',
     ],
+    profileLink: 'https://www.codechef.com/users/nikhilp96',
   },
 ];
 
@@ -66,13 +67,17 @@ const CodingProfiles = () => {
                       className="text-muted small text-center mb-1"
                       style={{ fontFamily: 'Poppins, sans-serif' }}
                     >
-                      {profile.rating}
+                      {profile.rating} | {profile.problemsSolved}
                     </p>
-                    <p
-                      className="text-muted small text-center mb-2"
-                      style={{ fontFamily: 'Poppins, sans-serif' }}
-                    >
-                      {profile.problemsSolved}
+                    <p className="text-center mb-2">
+                      <a
+                        href={profile.profileLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary small"
+                      >
+                        View Profile
+                      </a>
                     </p>
 
                     <hr className="my-2" />

@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 import myPhoto from '../../assets/nikhil.jpeg';
 import './Contact.css';
+import resumePDF from '../../assets/CSE_22501A05E8.pdf';
+
 const ContactPage = () => {
   return (
     <div> <h2 className="mt-3 text-center heading">Contact Me</h2>
@@ -64,11 +66,18 @@ const ContactPage = () => {
               <Button
                 variant="primary"
                 className="mt-2 w-auto"
-                href="/assets/CSE_22501A05E8.pdf"  
-                download
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = resumePDF;
+                  link.download = 'Nikhil_Resume.pdf'; // optional custom filename
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
                 Download Resume
               </Button>
+
             </Col>
           </Row>
 
