@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import myPhoto from '../../assets/aboutme.jpeg'; // Ensure this path is correct
+import myPhoto from '../../assets/nikhil.jpeg'; // Ensure this path is correct
 
 const About = () => {
   return (
@@ -16,7 +16,7 @@ const About = () => {
               alt="Profile"
               roundedCircle
               fluid
-              style={{ width: '180px', height: '180px', objectFit: 'cover', border: '4px solid #fff' }}
+              style={{ width: '220px', height: '220px', objectFit: 'cover', border: '4px solid #fff' }}
               className="shadow"
             />
           </Col>

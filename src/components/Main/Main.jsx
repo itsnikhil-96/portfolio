@@ -8,9 +8,7 @@ import Contact from '../Contact/Contact'
 function Main() {
   return (
     <div className='container'>
-      <section id="about">
-        <Contact/>
-      </section>
+     
       <section id="about">
         <About />
       </section>
@@ -26,7 +24,9 @@ function Main() {
       <section id="coding-profiles">
         <CodingProfiles />
       </section>
-
+       <section id="about">
+        <Contact/>
+      </section>
       {/* Add more like this if needed */}
     </div>
   );
