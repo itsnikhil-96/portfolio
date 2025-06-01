@@ -24,7 +24,7 @@ function Main() {
       <section id="coding-profiles">
         <CodingProfiles />
       </section>
-       <section id="about">
+       <section id="contact">
         <Contact/>
       </section>
       {/* Add more like this if needed */}

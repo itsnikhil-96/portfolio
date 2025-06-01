@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaUser } from 'react-icons/fa';
 import { IoCubeOutline, IoNewspaper } from 'react-icons/io5';
 import { ImProfile } from 'react-icons/im';
+import { FaCode } from "react-icons/fa";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,15 +32,17 @@ const Header = () => {
               <a className="nav-link fs-5" href="#about" onClick={closeNavbar}><FaUser className='mb-1' /> About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-5" href="#skills" onClick={closeNavbar}><FaUser className='mb-1' /> Skills</a>
+              <a className="nav-link fs-5" href="#skills" onClick={closeNavbar}><FaCode className='mb-1' /> Skills</a>
             </li>
             <li className="nav-item">
               <a className="nav-link fs-5" href="#projects" onClick={closeNavbar}><IoCubeOutline className='mb-1' /> Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-5" href="#coding-profiles" onClick={closeNavbar}><ImProfile className='mb-1' /> Coding Profiles</a>
+              <a className="nav-link fs-5" href="#coding-profiles" onClick={closeNavbar}><FaCode className='mb-1' /> Coding Profiles</a>
             </li>
-           
+            <li className="nav-item">
+              <a className="nav-link fs-5" href="#contact" onClick={closeNavbar}><ImProfile className='mb-1' /> Contact</a>
+            </li>
           </ul>
         </div>
       </div>
