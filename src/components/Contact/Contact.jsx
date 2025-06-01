@@ -57,9 +57,10 @@ const ContactPage = () => {
               </a>
             </Col>
             <Col xs={12} sm={6} className="mb-3 d-flex align-items-center">
-              <FaPhone className="me-2" />
-              +91-9177649519
+            <FaPhone className="me-2" />
+            <a href="tel:+919177649519">+91-9177649519</a>
             </Col>
+
           </Row>
           <Row className="justify-content-center">
             <Col xs="auto">
